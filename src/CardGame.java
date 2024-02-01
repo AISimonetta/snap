@@ -1,7 +1,8 @@
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class CardGame {
-//STAGE 1
+    //STAGE 1
     //    Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is
 //    constructed.
 //    Has a name which is also defined in the constructor.
@@ -18,4 +19,11 @@ public class CardGame {
 //    deck back into the deckOfCards attribute.
 //    ArrayList<Card> shuffleDeck()
 //    Shuffles the deck into a random order and stores the new shuffled deck back into the deckOfCards attribute.
+    ArrayList<Card> deckOfCards = new ArrayList<>();
+    private String name ;
+
+    public void getDeck() {
+
+    }
+
 }
