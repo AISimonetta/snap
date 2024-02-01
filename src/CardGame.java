@@ -2,11 +2,13 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class CardGame {
+
+    // Instructions
     //STAGE 1
-    //    Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is
-//    constructed.
-//    Has a name which is also defined in the constructor.
-//    Has a getDeck method that lists out the cards in the deck.
+    //  Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is
+    // constructed.
+    // Has a name which is also defined in the constructor.
+    //as a getDeck method that lists out the cards in the deck.
 
     //STAGE 2
 //    Lets get some core functionality to our CardGame by implementing the following methods:
@@ -23,6 +25,9 @@ public class CardGame {
     private String name ;
 
     public void getDeck() {
+        for (Card card : deckOfCards) {
+            System.out.println(card);
+        }
 
     }
 
