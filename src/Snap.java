@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
+public class Snap extends CardGame {
 
 //STAGE 3
 //    Create class for Snap that extends CardGame.
@@ -14,6 +15,9 @@ import java.util.Scanner;
 //    The game continues until two cards in a row have the same symbol, at which point the “player” wins and the game ends
 //}//functions to invorporate sortDeckInNumberOrder() sortDeckIntoSuits() shuffleDeck()
 
-
-
+    public void playGame() {
+  //first the user press enter and strats.
+        //a new card should be removed deck dealCard()
+        // if two cards
+    }
 }
