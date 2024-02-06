@@ -3,8 +3,10 @@ public enum StringSymbol {
 
     private final String value;
 
+
     StringSymbol(String value) {
         this.value = value;
+
     }
 
     public String toString() {

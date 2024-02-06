@@ -3,7 +3,6 @@ public class Main {
         Snap snap = new Snap("PlayerTwo");
         UserInteraction userInteraction = new UserInteraction();
         do {
-            snap.startPlay();
             snap.playGame();
         } while (userInteraction.playAgain());
     }
