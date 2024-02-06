@@ -10,6 +10,7 @@ public class CardGame {
 
     //Methods
 
+
     //method to create a card with a suit and symbol
     public  void createDeck() {
         for (Suit suit : Suit.values()) {
@@ -48,5 +49,6 @@ public class CardGame {
     public ArrayList<Card> shuffleDeck() {
         Collections.shuffle(deckOfCards, new Random());
         return deckOfCards;
+
     }
 }

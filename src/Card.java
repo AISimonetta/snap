@@ -4,20 +4,20 @@ public class Card {
     private StringSymbol stringSymbol;
     private int value;
 
-    // Default constructor:
+    // default constructor:
     public Card(Suit suit, StringSymbol stringSymbol) {
         this.suit = suit;
         this.stringSymbol = stringSymbol;
     }
 
-    // Constructor
+    // constructor
     public Card(Suit suit, StringSymbol stringSymbol, int value) {
         this.suit = suit;
         this.stringSymbol = stringSymbol;
         this.value = value;
     }
 
-    // Getters
+    // getters
     public Suit getSuit() {
         return suit;
     }
@@ -36,11 +36,11 @@ public class Card {
         return String.format(
                 "                \n"
                         + "  " + this.stringSymbol + "           \n"
-                        + "  " + this.suit + "            \n"
+                        + "  " + this.suit.getUnicode() + "            \n"
                         + "               \n"
-                        + "       " + this.suit + "       \n"
+                        + "       " + this.suit.getUnicode() + "       \n"
                         + "               \n"
-                        + "            " + this.suit + " \n"
+                        + "            " + this.suit.getUnicode() + " \n"
                         + "            " + this.stringSymbol + " \n"
                         + "                \n"
         );

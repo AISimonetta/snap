@@ -3,8 +3,11 @@ public enum Suit {
 
     private final String unicode;
 
-
     Suit(String unicode) {
         this.unicode = unicode;
+    }
+
+    public String getUnicode() {
+        return unicode;
     }
 }

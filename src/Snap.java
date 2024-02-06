@@ -12,12 +12,16 @@ public class Snap extends CardGame {
     }
 
     //Methods:
-    public void playGame() {
+
+    public void startPlay(){
         UserInteraction snap = new UserInteraction();
-        boolean snapMatchingCards = false;
         System.out.println("--------------------------------------------------------------------");
         System.out.println("Hi! My name is Alex, welcome to SNAP game");
         String playerTwo = snap.getPlayerName();
+    }
+
+    public void playGame() {
+        boolean snapMatchingCards = false;
         createDeck();
         shuffleDeck();
 
@@ -35,6 +39,7 @@ public class Snap extends CardGame {
 
         if (!snapMatchingCards && deckOfCards.size() >= 2) {
             System.out.println("Cards do not match.. NEXT ROUND!");
+            startPlay();
         }
     }
 
@@ -42,10 +47,6 @@ public class Snap extends CardGame {
         return cardOne.getStringSymbol() == cardTwo.getStringSymbol();
     }
 
-    private void getPlayerTwoName() {
-        UserInteraction userInteraction = new UserInteraction();
-        String playerTwo = userInteraction.getPlayerName();
-    }
 
     public void saySnap() {
         System.out.println("SNAP!");
