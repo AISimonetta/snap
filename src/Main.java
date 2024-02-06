@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-//        playGame();
-        System.out.println("Hello world!");
+        Snap snap = new Snap("PlayerTwo");
+        UserInteraction userInteraction = new UserInteraction();
+        do {
+            snap.playGame();
+        } while (userInteraction.playAgain());
     }
 }
