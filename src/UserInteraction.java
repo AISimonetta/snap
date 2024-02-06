@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class UserInteraction {
     private Scanner scanner = new Scanner(System.in);
 
-
+        //Methods
         public String getPlayerName() {
             System.out.println("--------------------------------------------------------------------");
             System.out.println("* Please enter your name: ");
@@ -11,11 +11,10 @@ public class UserInteraction {
             return playerName;
         }
 
-    public void userTurn() {
-        System.out.println("--------------------------------------------------------------------");
-        System.out.println("* Please press ENTER, It's your turn!");
-        scanner.nextLine();
-    }
+        public void userTurn() {
+            System.out.println("* Please press ENTER, It's your turn!");
+            scanner.nextLine();
+        }
 
         public boolean playAgain() {
             System.out.println("* Would you like to play again? ( 0 for No, 1 for Yes): ");
@@ -26,12 +25,5 @@ public class UserInteraction {
                 return false;
             }
         }
-//    TO DEVELOP FOR STAGE $
-//    public int playerTwoSaysSnap() {
-//        System.out.println("--------------------------------------------------------------------");
-//        System.out.println("* Be quick!!Press enter to say SNAP");
-//        int turn = scanner.nextInt();
-//        return turn;
-//    }
 }
 

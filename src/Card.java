@@ -1,23 +1,23 @@
 public class Card {
-
+    // Variables
     private Suit suit;
     private StringSymbol stringSymbol;
     private int value;
 
-    // default constructor:
+    //Default constructor:
     public Card(Suit suit, StringSymbol stringSymbol) {
         this.suit = suit;
         this.stringSymbol = stringSymbol;
     }
 
-    // constructor
+    //Constructor
     public Card(Suit suit, StringSymbol stringSymbol, int value) {
         this.suit = suit;
         this.stringSymbol = stringSymbol;
         this.value = value;
     }
 
-    // getters
+    //Getters
     public Suit getSuit() {
         return suit;
     }
@@ -30,7 +30,7 @@ public class Card {
         return value;
     }
 
-    // to display visually the card and with some colour using ANSI codes
+    // Displays visually the card with some colour on it by using ANSI codes
     @Override
     public String toString() {
         String colorString = suit.getColour().equals("red") ? "\u001B[31m" : "\u001B[30m";
