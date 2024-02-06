@@ -6,18 +6,23 @@ import java.util.Scanner;
 
 public class Snap extends CardGame {
 
-//STAGE 3
-//    Create class for Snap that extends CardGame.
-//            This class should use the methods defined above, as well as some new ones, to enable the user to play the game snap according to the
-//    following rules:
-//    By pressing enter in the command line, the user takes their turn.
+    private String playerOne = "Alex-Machine";
+    private String pLayerTwo ;
+
 //    Each turn, a new card is dealt from the deck.
 //    The game continues until two cards in a row have the same symbol, at which point the “player” wins and the game ends
 //}//functions to invorporate sortDeckInNumberOrder() sortDeckIntoSuits() shuffleDeck()
 
     public void playGame() {
-  //first the user press enter and strats.
-        //a new card should be removed deck dealCard()
-        // if two cards
+        //name entered of player two.
+        //he shuffles first card
+        //playerONe shuffles card
+        //if no match, continue repeat before & dealCard
+        //if match gives snap function.
+
+    }
+
+    public  void  saySnap (){
+
     }
 }

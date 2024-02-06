@@ -12,6 +12,9 @@ public class Card {
     private StringSymbol stringSymbol;
     private int value;
 
+    //Default constructor:
+    public Card(Suit suit, StringSymbol stringSymbol) {
+    }
     // Constructor
     public Card(Suit suit, StringSymbol stringSymbol, int value) {
         this.suit = suit;
@@ -58,6 +61,8 @@ public class Card {
                 break;
         }
     }
+
+
 
     // Getters
     public Suit getSuit() {
