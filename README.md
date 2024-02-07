@@ -1,7 +1,7 @@
 ✦ SNAP Card Game Project:
 
 This project involved developing a functional game based on Java's Object-Oriented Programming (OOP) principles. In short, this a simple game played with a pack of cards, usually by 2 or more players.
-In each round, a player is given a card and if the card matches with the the other player's card, the first one to shout "SNAP" wins. This project showcase the main the funcitonality on how to compare the cards and ends the game when cards run out or there is match.
+In each round, a player is given a card and if the card matches with the the other player's card, the first one to shout "SNAP" wins. This project showcase the main funcitonality of the game such as how to compare the cards and instructing the game is over when cards run out or there is match "SNAP".
 
 ✦ Technologies used:
 
