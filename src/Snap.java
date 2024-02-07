@@ -13,10 +13,10 @@ public class Snap extends CardGame {
 
     // Methods:
     public void playGame() {
-        UserInteraction snap = new UserInteraction();
+        UserInteraction user = new UserInteraction();
         System.out.println("--------------------------------------------------------------------");
         System.out.println("Hi! My name is Alex, welcome to SNAP card game");
-        String playerName = snap.getPlayerName();
+        String playerName = user.getPlayerName();
         String playerTwo = playerName;
 
         createDeck();
@@ -44,7 +44,7 @@ public class Snap extends CardGame {
 
 
             // PlayerTwo turn
-            snap.userTurn();
+            user.userTurn();
             Card cardPlayerTwo = dealCard(deckOfCards);
             System.out.println(playerTwo + " -> Your card is: " + cardPlayerTwo);
             // Check if the cards match
@@ -72,9 +72,7 @@ public class Snap extends CardGame {
     //If cards match, game ends with SNAP!
     private void saySnap() {
         System.out.println("----------------------------------------------------------------------------------------");
-        System.out.println("\u001B[35m * * * * * * * * * * * * * * * S N A P ! * * * * * * * * * * * * * *\u001B[35m");
+        System.out.println(" * * * * * * * * * * * * * * * * * * * S N A P ! * * * * * * * * * * * * * * * * * * * *");
         System.out.println("----------------------------------------------------------------------------------------");
-        System.out.println("\u001B[35m------------------------------Game Over----------------------------\u001B[35m");
-
     }
 }

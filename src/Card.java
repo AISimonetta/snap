@@ -36,15 +36,16 @@ public class Card {
         String colorString = suit.getColour().equals("red") ? "\u001B[31m" : "\u001B[30m";
 
         return String.format(
-                "                \n"
-                        + "  " + colorString + this.stringSymbol + "          \n"
-                        + "  " + colorString + this.suit.getUnicode() + "           \n"
+
+                        "              \n"
+                        + "  " + colorString + this.stringSymbol + "         \n"
+                        + "  " + colorString + this.suit.getUnicode() + "         \n"
                         + "               \n"
-                        + "       " + colorString + this.suit.getUnicode() + "      \n"
-                        + "               \n"
-                        + "           " + colorString + this.suit.getUnicode() + " \n"
-                        + "           " + colorString + this.stringSymbol + " \n"
-                        + "               \n"
+                        + "      " + colorString + this.suit.getUnicode() + "     \n"
+                        + "              \n"
+                        + "          " + colorString + this.suit.getUnicode() + " \n"
+                        + "          " + colorString + this.stringSymbol + " \n"
+                        + "             \n"
                         + "\u001B[0m" // Reset ANSI color code
         );
     }

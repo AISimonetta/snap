@@ -1,5 +1,5 @@
 public enum Suit {
-    //Variables
+    //Enum Constants with values
     CLUB("\u2663", "black"), SPADE("\u2660", "black"), HEART("\u2665", "red"), DIAMOND("\u2666", "red");
 
     private final String unicode;
